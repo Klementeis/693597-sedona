@@ -69,7 +69,28 @@
     <section class="hotels">
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <div><button class="hotels-menu">Поиск гостиницы в Седоне</button></div>
+      <button class="hotels-search-button" type="submit">Поиск гостиницы в Седоне</button>
+      <div class="hotels-search">
+        <form action="#" method="get">
+        <label for="arrival-date">Дата заезда:</label><input type="date" id="arrival-date">
+        <label for="departure-date">Дата выезда:</label><input type="date" id="departure-date">
+         <div class="adults-quantity">
+           <label for="adults-quantoty">Взрослые</label>          
+           <button class="plus" type="button">+</button>       
+           <input id="adults-quantity" type="number" value="2">
+           <button class="minus" type="button>-</button>              
+         </div>
+         <div class="children-quantity">
+           <label for="children-quantity">Дети</label>          
+           <button class="plus" type="button">+</button>       
+           <input id="children-quantity" type="number" value="0">
+           <button class="minus" type="button>-</button>              
+         </div>
+        <button type="submit" class="search">Нати</button>
+      </form>
+      </div>
+      
+      
       <div class="map">
         <script src="#"></script>
       </div>
