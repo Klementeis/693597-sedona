@@ -15,6 +15,7 @@ body {
 
 .main-menu li {
     width: 239px;
+    height: 56px;
 }
 
 .logo {    
@@ -55,7 +56,7 @@ body {
     margin-bottom: 61px;
 }
 
-h2 {
+.h2 {
     text-align: center;
 }
 
@@ -102,9 +103,8 @@ h2 {
     margin-bottom: 85px;
 }
 
-li {
+.advices li, .other-sites li {
     display: inline-block;
-    font-size: 0;
     height: 185px;
     vertical-align: top;
 }
@@ -126,12 +126,12 @@ li {
     font-size: 14px;
 }
 
-li div {
+.advices div {
     text-align: center;
-    margin-bottom: 29px;
+    
 }
 
-ul p {
+.advices p {
     text-align: center;
 }
 
@@ -219,7 +219,7 @@ ul p {
     font-weight: bold;
 }
 
-footer {
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
