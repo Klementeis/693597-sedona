@@ -6,7 +6,7 @@ body {
     color: #333333;
     text-transform: uppercase;
     width: 1200px;
-    padding: 0 40px;
+    margin: 0 auto;
 }
 
 .menu-list {
@@ -61,8 +61,7 @@ body {
 }
 
 .reasons {
-    margin-right: 356px;
-    margin-left: 355px;
+    text-align: center;
     margin-bottom: 56px;
 }
 
@@ -239,6 +238,10 @@ body {
 
 .academy-logo {
     vertical-align: middle;
+}
+
+.footer-div {
+    flex: 33.333333% 0 0;
 }
 
 .demands {
