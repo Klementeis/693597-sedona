@@ -220,15 +220,21 @@ body {
 }
 
 .footer {
+    height: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .other-sites li {
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .academy-logo {
@@ -267,15 +273,22 @@ body {
     width: 1200px;
     height: 86px;
     display: flex;
+    align-items: baseline;
+    align-items: center;
+
 }
 
 .sorting h2 {
     margin-left: 72px;
+    margin-right: 49px;
 }
 
 .sorting li {
     font-size: 12px;
-    list-style: none;    
+    list-style: none;   
+    display: inline-block;
+    margin-right: 32px;
+
 }
 
 .sorting ul {
@@ -294,9 +307,9 @@ body {
 .hotel-1, .hotel-2, .hotel-3 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     width: 1200px;
-    height: 150px;
+    height: 120px;
     display: flex;
-    align-items: center;
+    padding-top: 30px;
 }
 
 .hotel-1 {
@@ -305,16 +318,30 @@ body {
 
 .info {
     flex-grow: 1;
-    margin-left: 30px;
-    align-content: center; 
+    margin-left: 30px; 
+}
+
+.hotel-name{
+    margin: 0;
 }
 
 .info h2 {
     text-align: left;
 }
 
+.type-price {
+    padding-top: 2px;
+    padding-bottom: 13px;
+    display: inline-block;
+}
+
 .hotel-view {
     margin-left: 72px;
+}
+
+.hotel-word {
+    display: inline-block;
+    width: 112px;
 }
 
 .to-book {
@@ -339,6 +366,7 @@ body {
     padding: 3px 12px 4px 15px;
     margin: 0;
     color: #666666;
+    margin-top: 47px;
 }
 
 .sorting .active {
