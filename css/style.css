@@ -20,7 +20,7 @@ body {
 
 
 .logo {    
-    margin: 0;
+    margin: 0 auto;
     width: 244px;
 }
 
@@ -88,7 +88,7 @@ body {
     display: inline-block;
     padding: 0 60px;
     padding-top: 46px;
-    padding-bottom: 64px; 
+    padding-bottom: 53px; 
     margin-right: 0;
     font-size: 14px;
     vertical-align: top;
@@ -109,6 +109,7 @@ body {
     vertical-align: bottom;
     margin-left: 73px;
     margin-bottom: 85px;
+
 }
 
 .advices li, .other-sites li {
@@ -329,6 +330,10 @@ body {
     margin-right: 49px;
 }
 
+.sorting ul {
+    width: 862px;
+}
+
 
 .sorting li {
     font-size: 12px;
@@ -473,16 +478,33 @@ body {
     display: inline-block;
 }
 
-svg {
+.footer-div svg {
     width: 115px;
     height: 41px;
 }
 
-svg:hover {
+.footer-div svg:hover {
     fill: #81b3d2;  
 }
 
-svg:active {
+.footer-div svg:active {
     fill: #bdbbbc;
+}
+
+.up-down-icon a {
+    border: none;
+}
+
+.up-down-icon svg {
+    fill: #cacaca;
+}
+
+
+.up-down-icon svg:hover {
+    fill: black;
+}
+
+.up-down-icon svg:active {
+    fill: #81b3d2;
 }
 
