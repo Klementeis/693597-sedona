@@ -18,6 +18,7 @@ body {
     height: 56px;
 }
 
+
 .logo {    
     margin: 0;
     width: 244px;
@@ -31,6 +32,14 @@ body {
     font-size: 14px;
 }
 
+.main-menu a:hover {
+    color: #81b3d2;
+} 
+
+.main-menu a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .main-menu ul {
     margin: 0;
     padding: 0;
@@ -41,7 +50,7 @@ body {
     display: flex;
     }
 
-.menu-list .active {
+.menu-list .current {
     color: #766357;
 }
 
@@ -72,7 +81,7 @@ body {
 
 .content-1 {
     width: 280px;
-    height: 146px;
+    min-height: 146px;
     background-color:#81b3d2;
     color: #ffffff;
     text-align: center;
@@ -106,6 +115,7 @@ body {
     display: inline-block;
     height: 185px;
     vertical-align: top;
+    justify-content: center;
 }
 
 .house {
@@ -149,7 +159,7 @@ body {
     font-size: 14px;
     text-align: center;
     padding-bottom: 65px;
-    height: 191px;
+    min-height: 191px;
 }
 
 .text-content h2 {
@@ -163,7 +173,7 @@ body {
 
 .reason-3, .reason-4, .reason-5 {
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     background-color: #f2f2f2;
     color: black;
     text-align: center;
@@ -206,6 +216,15 @@ body {
     text-transform: uppercase;
 }
 
+.search-button:hover {
+    background-color: #604e43;
+}
+
+.search-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .map {
     width: 1200px;
     height: 593px;
@@ -221,27 +240,51 @@ body {
 .footer {
     height: 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     
 }
 
-.other-sites li {
+.other-sites a {
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
-    display: inline-flex;
+    display: inline-flex;  
     align-items: center;
-    justify-content: center;
-   
+    justify-content: center;    
+}
+
+.other-sites li {
+    align-items: center;
+    display: inline-flex;  
+      
+}
+
+.other-sites a:hover {
+    background-color: #669ec0;
+}
+
+
+.other-sites a:active {
+    background-color: #5496bd;
+}
+
+.other-sites img:active {
+    opacity: 0.3;   
 }
 
 .academy-logo {
     vertical-align: middle;
 }
 
+.academy-logo a:hover {
+    fill: #81b3d2;
+}
+
+
 .footer-div {
     flex: 33.333333% 0 0;
+    text-align: center;
 }
 
 .demands {
@@ -286,12 +329,20 @@ body {
     margin-right: 49px;
 }
 
+
 .sorting li {
     font-size: 12px;
     list-style: none;   
     display: inline-block;
     margin-right: 32px;
+}
 
+.sorting a:hover {
+    color: #81b3d2;
+}
+
+.sorting a:active {
+    color:#000000;
 }
 
 .sorting ul {
@@ -310,7 +361,7 @@ body {
 .hotel-1, .hotel-2, .hotel-3 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     width: 1200px;
-    height: 120px;
+    min-height: 120px;
     display: flex;
     padding-top: 30px;
 }
@@ -330,6 +381,21 @@ body {
 
 .info h2 {
     text-align: left;
+    
+}
+
+.hotel-name a {
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+}
+
+.hotel-name a:hover {
+    color: #81b3d2;
+}
+
+.hotel-name a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .type-price {
@@ -356,6 +422,15 @@ body {
     margin: 0;
 }
 
+.to-book:hover {
+    background-color: #604e43;
+} 
+
+.to-book:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .details {
     text-decoration: none;
     background-color: #81b3d2;
@@ -364,16 +439,50 @@ body {
     padding: 5px 16px;
 }
 
+.details:hover {
+    background-color: #669ec0;
+}
+
+.details:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .rating-value {
     background-color: #f2f2f2;
     padding: 3px 12px 4px 15px;
-    margin: 0;
     color: #666666;
-    margin-top: 47px;
+    margin-right: 73px;
 }
 
 .sorting .active {
     color: #81b3d2;
     border: none;
+}
+
+.stars-row {
+    text-align: right;
+    margin-right: 73px;
+}
+
+.stars {
+    width: 18px;
+    height: 17px;
+    background: url(../img/star.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+svg {
+    width: 115px;
+    height: 41px;
+}
+
+svg:hover {
+    fill: #81b3d2;  
+}
+
+svg:active {
+    fill: #bdbbbc;
 }
 
