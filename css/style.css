@@ -200,6 +200,10 @@ body {
 }
 
 .search-details {
+    box-sizing: border-box;
+    }
+
+.search-details {
     width: 568px;
     min-height: 86px;
     margin-left: 316px;
@@ -223,11 +227,18 @@ body {
     font-weight: bold;  
 }
 
-..arrival-date {
+.arrival-date {
     width: 100%;
+    display: flex; 
+    align-items: baseline; 
+    
 }
 
-}
+.arrival-date label {
+    margin-right: auto;
+    }
+
+
 #adult {
     width: 0;
     min-width: 38px;
@@ -240,15 +251,7 @@ body {
 
 .people {
     display: flex;
-}
-
-.people label {
-    margin-right: 
-}
-
-.people {
     justify-content: space-between;
-
 }
 
 .people a {
@@ -261,7 +264,9 @@ body {
     vertical-align: top;  
 }
 
-
+.people input {
+    width: 38px;
+}
 
 .question {
     font-size: 30px;
