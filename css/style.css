@@ -230,14 +230,12 @@ body {
 .arrival-date {
     width: 100%;
     display: flex; 
-    align-items: baseline; 
-    
+    align-items: baseline;   
 }
 
 .arrival-date label {
     margin-right: auto;
     }
-
 
 #adult {
     width: 0;
@@ -252,6 +250,7 @@ body {
 .people {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .people a {
@@ -264,8 +263,13 @@ body {
     vertical-align: top;  
 }
 
+.people label {
+    margin-right: 41px;
+}
+
 .people input {
     width: 38px;
+    margin: 41px;
 }
 
 .question {
