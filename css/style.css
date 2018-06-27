@@ -227,10 +227,38 @@ body {
     font-weight: bold;  
 }
 
+.search-details input {
+    padding-left: 13px;
+}
+
+.arrival-date a {
+    fill: #cacaca;
+    position: absolute;
+}
+
+.arrival-date a:hover {
+    fill: black;
+}
+
+.arrival-date  a:active {
+    fill: #81b3d2;
+}
+
+.arrival-date a:first-of-type {
+    left: 430px;
+    top: 8px;
+}
+
+.arrival-date a:last-of-type {
+    left: 430px;
+    top: 74px;
+}
+
 .arrival-date {
     width: 100%;
     display: flex; 
     align-items: baseline;   
+    position: relative;
 }
 
 .arrival-date label {
@@ -269,11 +297,11 @@ body {
 
 
 .people div:first-of-type a:last-child {
-    margin-right: 38px;
+    margin-right: 65px;
 }
 
 .people label {
-    margin-right: 41px;
+    margin-right: 28px;
 }
 
 .people input {
@@ -306,6 +334,16 @@ body {
     text-transform: uppercase;
     margin-bottom: 55px;
 }
+
+.hotel-search:hover {
+    background-color: #669ec0;
+}
+
+.hotel-search:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3); 
+}
+
 
 .question {
     font-size: 30px;
@@ -406,12 +444,24 @@ body {
     width: 1200px;
     height: 233px;
     display: flex;
+    padding-top: 31px;
 }
 
 .demands p {
     color: white;
     font-size: 16px;
     font-weight: bold;
+    margin: 0;
+    margin-bottom: 28px;
+}
+
+.demands ul {
+    margin: 0;
+    padding: 0;
+}
+
+.demands li {
+    list-style: none;
 }
 
 .demands label {
@@ -420,7 +470,7 @@ body {
 
 .filter-range {
     width: 330px;
-    margin: 50px auto; /* для демо */
+    margin: 0px auto; /* для демо */
   
     color: #ffffff;
     text-transform: uppercase;
@@ -428,7 +478,6 @@ body {
   
   .filter-range-title {
     margin-bottom: 9px;
-  
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
@@ -552,10 +601,44 @@ body {
     margin-right: 115px;
 }
 
-.infrastructure-checkbox {
-    display: block;
-   
+.infrastructure-checkbox label, .accomodation-checkbox label {
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    backgroud-position: 0 0;
+    padding-left: 40px;
+    min-height: 24px;
 }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden, .hotel-search .visually-hidden {
+position: absolute;
+
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.demands li {
+    margin-bottom: 30px;
+}
+
+.check-box:checked + label {
+    background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+    backgroud-position: 0 0;
+    padding-left: 40px;
+}
+
+
 
 .sorting {
     width: 1200px;

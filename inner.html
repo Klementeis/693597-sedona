@@ -25,17 +25,19 @@
   <section class="demands">
     <div class="infrastructure">
       <p>Инфраструктура:</p>
-      <div class="infrastructure-checkbox">
-        <input type="checkbox" id="swimmingpool" name="swimmingpool" value="swimmingpool" checked> <label for="swimmingpool">Бассейн</label>
-        <input type="checkbox" id="parcking" name="parcking" value="parcking"><label for="parcking">Парковка</label>
-        <input type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi"><label for="wi-fi">Wi-Fi</label>
-      </div>   
+      <ul class="infrastructure-checkbox">
+       <li><input class="visually-hidden check-box checked" type="checkbox" id="swimmingpool" name="swimmingpool" value="swimmingpool" checked> <label for="swimmingpool">Бассейн</label></li>
+       <li><input class="visually-hidden check-box" type="checkbox" id="parcking" name="parcking" value="parcking"><label for="parcking">Парковка</label></li>
+       <li><input class="visually-hidden check-box" type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi"><label for="wi-fi">Wi-Fi</label></li>
+      </ul>   
     </div>
     <div class="accomodation-type">
       <p>Тип жилья:</p>
-        <input type="checkbox" id="hotel" name="hotel" value="hotel" checked> <label for="hotel">Гостиница</label>
-        <input type="checkbox" id="motel" name="motel" value="motel" checked><label for="motel">Мотель</label>
-        <input type="checkbox" id="apartments" name="apartments" value="apartments" checked><label for="apartments">Апартаменты</label>      
+      <ul class="accomodation-checkbox">
+        <li><input class="visually-hidden check-box" type="checkbox" id="hotel" name="hotel" value="hotel" checked> <label for="hotel">Гостиница</label></li>
+        <li><input class="visually-hidden check-box" type="checkbox" id="motel" name="motel" value="motel" checked><label for="motel">Мотель</label></li>
+        <li><input class="visually-hidden check-box" type="checkbox" id="apartments" name="apartments" value="apartments" checked><label for="apartments">Апартаменты</label></li>
+      </ul>    
     </div>
     <div class="filter-range">
       <div class="filter-range-title">Стоимость в сутки (р):</div>
