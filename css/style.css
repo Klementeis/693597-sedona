@@ -1,13 +1,12 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #333333;
     text-transform: uppercase;
     width: 1200px;
-    margin: 0;
-    margin-left: 40px;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-menu {
@@ -56,6 +55,7 @@ body {
     padding: 0 53px;
     width: 138px;
     height: 70px;
+    z-index: 2;
 
 }
 
@@ -68,6 +68,14 @@ body {
     background-repeat: no-repeat;
     text-align: center;
     margin-bottom: 57px;
+    position: relative;
+}
+
+.welcome::after {
+    content: url(../img/shape-1-copy-3.png);
+    position: absolute;
+    top: 457px;
+    left: 0px;
 }
 
 .h2 {
@@ -636,6 +644,11 @@ body {
     cursor: pointer;
   }
 
+  .btn-transparent:hover {
+      color: black;
+      background-color: #ffffff;
+  }
+
 .infrastructure {
     margin-left: 72px;
     margin-right: 119px;
@@ -649,6 +662,10 @@ body {
     min-height: 24px;
     display: block;
 }
+
+.infrastructure-checkbox label:blocked, .accomodation-checkbox label:blocked {
+    opacity: 0.3;
+} 
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -665,7 +682,12 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
-
+.check-box:focus + label {
+outline-color: rgb(77, 144, 254); // #4D90FE; 
+outline-offset: -2px; 
+outline-style: auto; 
+outline-width: 5px;
+}
 
 .check-box:checked + label {
     background-image: url(../img/checkbox-on.svg);
