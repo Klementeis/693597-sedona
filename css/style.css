@@ -225,7 +225,7 @@ html {
 
 .reasons-row {  
     display: flex;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
 }
 
 .reasons-row h2 {
@@ -266,13 +266,14 @@ html {
 }
 
 .search-details input {
-    width: 346px;
+    width: 332px;
     min-height: 38px;
     border: 0;
     padding: 0;
     background-color: #f2f2f2;
     margin-bottom: 29px;
     font-weight: bold;  
+    margin-left: 10px;
 }
 
 .search-details input {
@@ -328,6 +329,10 @@ html {
     margin-bottom: 54px;
 }
 
+.people div:first-of-type label {
+    margin-right: 38px;
+}
+
 .people a {
     text-decoration: none;
     display: inline-block;
@@ -343,7 +348,7 @@ html {
 }
 
 .people div:first-of-type a:last-child {
-    margin-right: 65px;
+    margin-right: 53px;
 }
 
 .people label {
@@ -596,13 +601,11 @@ html {
   
   .range-controls {
     position: relative;
-  
     margin-bottom: 32px;
   }
   
   .range-controls .scale {
     height: 2px;
-  
     background: rgba(255, 255, 255, 0.3);
   }
   
