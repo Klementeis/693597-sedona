@@ -247,6 +247,8 @@ html {
 
 .search-details {
     box-sizing: border-box;
+    position: absolute;
+    background: white;
 }
 
 .search-details {
@@ -404,6 +406,7 @@ html {
     font-weight: bold;
     padding: 0;
     text-transform: uppercase;
+    position: relative;
 
 }
 
