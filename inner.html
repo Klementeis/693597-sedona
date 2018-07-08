@@ -10,17 +10,27 @@
 <body>
 <header>
   <nav class="main-menu">
+      <a class="logo" href="index.html"><img src="img/invalid-name.png" width="138" height="70" alt="logo-img"></a>
     <ul class="menu-list">
-      <li><a href="#">Информация</a></li>
-      <li><a href="#">Фото и видео</a></li>
-      <li><a class="logo" href="index.html"><img src="img/invalid-name.png" width="138" height="70" alt="logo-img"></a></li>
+      <li class="first-part">
+        <ul>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+      </ul>
+      </li>
+      <li class="second-part">
+<ul>
       <li><a href="#">Карта штата</a></li>
-      <li><a class="current">Гостиницы</a></li>        
-    </ul>
+      <li><a class="current">Гостиницы</a></li>   
+</ul>     
+</li>
+</ul>
   </nav>
 </header>
 <main>
+    <form action="#" method="get">
   <section class="demands">
+  
     <div class="infrastructure">
       <p>Инфраструктура:</p>
       <ul class="infrastructure-checkbox">
@@ -52,12 +62,14 @@
       </div>
       <button class="btn-transparent" type="submit">Показать</button>
     </div>
+    
   </section>   
+</form>
   <section class="sorting">        
     <h2 class="h2">Найдено: 3</h2>      
     <ul>    
       <li>Сортировка:</li>   
-      <li><a href="#">По цене</a></li>
+      <li><a href="#" class="active">По цене</a></li>
       <li><a href="#">По типу</a></li>
       <li><a href="#">По рейтингу</a></li>
     </ul>
