@@ -14,33 +14,24 @@ html {
     background: #f2f2f2;
 }
 
+.logo {
+    margin: 0 auto -80px;
+    display: block;
+    z-index: 5;
+    position: relative;
+}
+
 .h2 p {
     margin: 0;
 }
 
-.menu-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;  
-    justify-content: right;
-}
-
-
-.first-part .second-part {
-    display: flex;
-    flex-direction: row;
-}
-
-.second-part {
-    justify-content: right;
+.main-menu li:nth-child(3), .main-menu li:nth-child(4){
+    text-align: right;
 }
 
 .main-menu li {
     width: 239px;
     height: 56px;
-    text-align: center;
-    display: flex;
 }
 
 .main-menu li:nth-of-type(3){
@@ -52,8 +43,9 @@ html {
     font-weight: bold;
     text-decoration: none;
     font-size: 14px;
-    display: block;
+    display: inline-block;
     padding-top: 18px;
+    text-align: center;
 }
 
 .main-menu a:hover {
@@ -68,12 +60,23 @@ html {
     color: #766357;
 }
 
-.main-menu .logo {
-    padding: 0 53px;
-    width: 138px;
-    height: 70px;
-    position: relative;
-    z-index: 3;
+.menu-list { 
+    -webkit-display: flex; 
+    -moz-display: flex;
+    display: flex;  
+    margin: 0; 
+    list-style: none; 
+    padding: 0 72px; 
+}
+
+.main-menu li { 
+    width: 242px; 
+    height: 56px; 
+    display: inline-block; 
+}
+
+.main-menu li:nth-of-type(3) { 
+    margin-left: auto; 
 }
 
 .welcome {
@@ -134,6 +137,7 @@ html {
     margin-right: 0;
     font-size: 14px;
     vertical-align: top;
+    margin-bottom: 53px;
 }
 
 .content-1 h2, .content-2 h2, .reason-3 h2, .reason-4 h2, .reason-5 h2 {
@@ -149,16 +153,16 @@ html {
     width: 800px;
     min-height: 256px;  
     display: inline-block;
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 .img-1 img {
     vertical-align: middle;
     line-height: 256px;
     position: absolute;
-    z-index: 0;
-    top: 677px;
-    overflow: hidden;
+    z-index: 1;
+    top: -78px;
 }
 
 .reason-1 ul {
@@ -179,11 +183,8 @@ html {
 }
 
 .advices {
-    position: relative;
-    z-index: 4;
     margin-top: 59px;
 }
-
 
 .house {
     width: 254px;
@@ -204,7 +205,11 @@ html {
 
 .advices div {
     text-align: center;
-    height: 76px; 
+    height: 76px;
+}
+
+.advices img {
+    vertical-align: bottom; 
 }
 
 .advices h2 {
@@ -224,7 +229,9 @@ html {
 
 .content-2 {
     height: 256px;
-    display: flex;
+    -webkit-display: flex; 
+    -moz-display: flex;
+    display: flex;  
     flex-direction: row-reverse;
     justify-content: space-between; 
 }
@@ -246,7 +253,17 @@ html {
 
 .img-2 {
     width: 800px;
-    height: 256px; 
+    height: 400px; 
+    position: absolute;
+    left: 0;
+    top: -80px;
+}
+
+.img-2-div {
+    width: 800px;
+    height: 256px;  
+    overflow: hidden;
+    position: relative;
 }
 
 .reason-3, .reason-4, .reason-5 {
@@ -259,7 +276,9 @@ html {
 }
 
 .reasons-row {  
-    display: flex;
+    -webkit-display: flex; 
+    -moz-display: flex;
+    display: flex;  
     margin-bottom: 48px;
 }
 
@@ -284,6 +303,7 @@ html {
     box-sizing: border-box;
     position: absolute;
     background: white;
+    z-index: 2;
 }
 
 .search-details {
@@ -292,7 +312,9 @@ html {
     margin-left: 316px;
     padding-top: 55px;
     font-weight: bold;  
-    display: flex;
+    -webkit-display: flex; 
+    -moz-display: flex;
+    display: flex;  
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
@@ -341,7 +363,9 @@ html {
 
 .arrival-date {
     width: 100%;
-    display: flex; 
+    -webkit-display: flex; 
+    -moz-display: flex;
+    display: flex;  
     align-items: baseline;   
     position: relative;
 }
@@ -360,6 +384,8 @@ html {
 }
 
 .people {
+    -webkit-display: flex; 
+    -moz-display: flex;
     display: flex;
     width: 100%;
     margin-bottom: 54px;
@@ -414,7 +440,9 @@ html {
 }
 
 .people div { 
-    display: flex; 
+    -webkit-display: flex; 
+    -moz-display: flex;
+    display: flex;  
     align-items: center; 
 }
 
@@ -473,7 +501,7 @@ html {
     width: 1200px;
     height: 593px;
     background-image: url(../img/map.jpg);
-    
+    position: relative;
 }
 
 .hashtag {
@@ -483,13 +511,40 @@ html {
 
 .footer {
     height: 120px;
-    display: flex;
+    -webkit-display: flex; 
+    -moz-display: flex;
+    display: flex; 
     align-items: center;
     position: absolute;
     right: 0;
     left: 0;
     bottom: 0;
     z-index: 2;
+    background: white;
+    opacity: 0.9;
+}
+
+.footer-inner {
+    height: 120px;
+    width: 1200px;
+    height: 593px;
+    background-image: url(../img/map.jpg);
+    position: relative;
+}
+
+.hashtag {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.footer {
+    height: 120px;
+    -webkit-display: flex; 
+    -moz-display: flex;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    background: white; 
 }
 
 .other-sites a {
@@ -538,6 +593,21 @@ html {
 }
 
 .footer-div {
+    width: 1200px;
+    height: 593px;
+    background-image: url(../img/map.jpg);
+    position: relative;
+}
+
+.hashtag {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.footer {
+    height: 120px;
+    -webkit-display: flex; 
+    -moz-display: flex;
     display: flex;
     flex: 33.333333% 0 0;
     text-align: center;
@@ -557,6 +627,21 @@ html {
     background-position: center;
     width: 1200px;
     min-height: 190px;
+    width: 1200px;
+    height: 593px;
+    background-image: url(../img/map.jpg);
+    position: relative;
+}
+
+.hashtag {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.footer {
+    height: 120px;
+    -webkit-display: flex; 
+    -moz-display: flex;
     display: flex;
     padding-top: 28px;
     background-color: #766357;
@@ -757,6 +842,21 @@ input[type="radio"].visually-hidden, .hotel-search .visually-hidden {
 .sorting {
     width: 1200px;
     height: 86px;
+    width: 1200px;
+    height: 593px;
+    background-image: url(../img/map.jpg);
+    position: relative;
+}
+
+.hashtag {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.footer {
+    height: 120px;
+    -webkit-display: flex; 
+    -moz-display: flex;
     display: flex;
     align-items: baseline;
     align-items: center;
@@ -807,7 +907,9 @@ input[type="radio"].visually-hidden, .hotel-search .visually-hidden {
     border-bottom: 1px solid #e5e5e5;
     width: 1200px;
     min-height: 120px;
-    display: flex;
+    -webkit-display: flex; 
+    -moz-display: flex;
+    display: flex;  
     padding-top: 30px;
 }
 
