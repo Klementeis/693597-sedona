@@ -21,8 +21,18 @@ html {
     position: relative;
 }
 
+.logo img {
+    z-index: 10;
+    position: relative;
+}
+
 .h2 p {
     margin: 0;
+}
+
+.main-menu { 
+    position: relative; 
+    z-index: 10;
 }
 
 .main-menu li:nth-child(3), .main-menu li:nth-child(4){
@@ -48,15 +58,15 @@ html {
     text-align: center;
 }
 
-.main-menu a:hover {
+.main-menu li a:hover {
     color: #81b3d2;
 } 
 
-.main-menu a:active {
+.main-menu li a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.menu-list .current {
+.menu-list li .current {
     color: #766357;
 }
 
@@ -309,7 +319,7 @@ html {
 }
 
 .hotels-search {
-    width: 435px;
+    width: 436px;
     height: 96px;
     margin-left: 383px;
     text-align: center;
@@ -562,7 +572,7 @@ html {
 }
 
 .footer-inner {
-    height: 110px;
+    height: 117px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -744,6 +754,14 @@ html {
     background: none;
     border: none;
 }
+
+.price-controls input { 
+    height: 34px;
+}
+    
+.price-controls label { 
+    line-height: 34px;
+}
   
 .range-controls {
     position: relative;
@@ -790,7 +808,8 @@ html {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 33px;
+    padding-right: px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -799,6 +818,7 @@ html {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
+    margin-left: 85px;
 }
 
 .btn-transparent:hover {
@@ -1012,7 +1032,7 @@ input[type="radio"].visually-hidden, .hotel-search .visually-hidden {
 
 .rating-value {
     background-color: #f2f2f2;
-    padding: 3px 12px 4px 15px;
+    padding: 4px 12px 2px 15px;
     color: #666666;
     margin-right: 73px;
     margin-top: 0;
@@ -1036,7 +1056,7 @@ input[type="radio"].visually-hidden, .hotel-search .visually-hidden {
     background-repeat: no-repeat;
     display: inline-block;
     margin: 0;
-    margin-bottom: 42px;
+    margin-bottom: 46px;
     vertical-align: top;
 }
 
